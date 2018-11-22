@@ -41,7 +41,7 @@ public class ComputerInfiniteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sport);
+        setContentView(R.layout.activity_computer);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         questionText = (TextView) findViewById(R.id.triviaQuestion);

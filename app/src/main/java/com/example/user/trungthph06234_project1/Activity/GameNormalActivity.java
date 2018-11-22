@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -78,6 +79,15 @@ public class GameNormalActivity extends AppCompatActivity {
 
             public void onFinish() {
                 timeUp();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(GameNormalActivity.this, GameWonActivity.class);
+                        intent.putExtra("Score", coinValue);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 4000);
             }
         }.start();
 

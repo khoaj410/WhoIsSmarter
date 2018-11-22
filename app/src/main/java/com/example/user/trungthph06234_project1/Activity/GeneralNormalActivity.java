@@ -78,6 +78,15 @@ public class GeneralNormalActivity extends AppCompatActivity {
 
             public void onFinish() {
                 timeUp();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(GeneralNormalActivity.this, GameWonActivity.class);
+                        intent.putExtra("Score", coinValue);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 4000);
             }
         }.start();
 

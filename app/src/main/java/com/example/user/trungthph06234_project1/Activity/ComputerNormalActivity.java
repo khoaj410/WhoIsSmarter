@@ -42,7 +42,7 @@ public class ComputerNormalActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sport);
+        setContentView(R.layout.activity_computer);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         questionText = (TextView) findViewById(R.id.triviaQuestion);
@@ -78,7 +78,17 @@ public class ComputerNormalActivity extends AppCompatActivity {
 
             public void onFinish() {
                 timeUp();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(ComputerNormalActivity.this, GameWonActivity.class);
+                        intent.putExtra("Score", coinValue);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 4000);
             }
+
         }.start();
         updateQuestion();
 

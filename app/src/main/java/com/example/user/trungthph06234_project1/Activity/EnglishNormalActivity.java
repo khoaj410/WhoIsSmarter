@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -69,9 +70,15 @@ public class EnglishNormalActivity extends AppCompatActivity {
             public void onFinish() {
 
                 timeUp();
-                Intent intent = new Intent(EnglishNormalActivity.this, GameWonActivity.class);
-                intent.putExtra("Score", coinValue);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(EnglishNormalActivity.this, GameWonActivity.class);
+                        intent.putExtra("Score", coinValue);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 4000);
             }
         }.start();
 

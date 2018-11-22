@@ -67,7 +67,7 @@ public class SportsOpenHepler extends SQLiteOpenHelper {
 
         sportsQuestions.add(new SportsQuestion("Cầu thủ nào đã từng chơi cho AC Milan, Chelsea, Altetico Madrid và Liverpool","Cristiano Ronaldo","Fernando Torres","Andrea Pirlo","Van Persie","Fernando Torres"));
 
-        sportsQuestions.add(new SportsQuestion("Ai là người dành quả bóng vàng 2014","Lionel Messi","Neymar Jr","Manuel Neuer","Cristano Ronaldo","Cristiano Ronaldo"));
+        sportsQuestions.add(new SportsQuestion("Ai là người dành quả bóng vàng 2014","Lionel Messi","Neymar Jr","Manuel Neuer","Cristiano Ronaldo","Cristiano Ronaldo"));
 
         sportsQuestions.add(new SportsQuestion("Nước nào vô địch World Cup 2014","Hà Lan","Anh","Pháp","Đức","Đức"));
 
