@@ -9,13 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.CategoryActivity" />
+        <activity android:name=".Activity.GameNormalActivity" />
+        <activity android:name=".Activity.GameInfiniteActivity" />
+        <activity android:name=".Activity.MusicNormalActivity" />
+        <activity android:name=".Activity.MusicInfiniteActivity" />
+        <activity android:name=".Activity.GeneralNormalActivity" />
+        <activity android:name=".Activity.GeneralInfiniteActivity" />
+        <activity android:name=".Activity.EnglishNormalActivity" />
+        <activity android:name=".Activity.EnglishInfiniteActivity" />
+        <activity android:name=".Activity.SportNormalActivity" />
+        <activity android:name=".Activity.SportInfiniteActivity" />
+        <activity android:name=".Activity.ComputerNormalActivity" />
+        <activity android:name=".Activity.ComputerInfiniteActivity" />
+        <activity android:name=".Activity.SettingActivity" />
+        <activity android:name=".Activity.GameWonActivity"></activity>
     </application>
 
 </manifest>

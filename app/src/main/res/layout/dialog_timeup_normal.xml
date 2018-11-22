@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fbutton_color_clouds"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Up
+Game Over"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:textSize="50sp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/clock"
+        android:layout_gravity="center"
+
+        android:contentDescription="TODO"
+        android:layout_marginBottom="30dp"/>
+
+
+
+
+
+</LinearLayout>
