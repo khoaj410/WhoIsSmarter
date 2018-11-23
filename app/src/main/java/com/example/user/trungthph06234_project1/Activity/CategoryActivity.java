@@ -1,12 +1,9 @@
 package com.example.user.trungthph06234_project1.Activity;
 
-import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.media.MediaPlayer;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,8 +11,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.user.trungthph06234_project1.R;
-
-import java.util.Objects;
 
 public class CategoryActivity extends AppCompatActivity {
     private Button btnGame;
@@ -86,7 +81,6 @@ public class CategoryActivity extends AppCompatActivity {
         final Dialog dialog1 = dialog.show();
         btnNormal = dialogView.findViewById(R.id.normal);
         btnInfinite = dialogView.findViewById(R.id.infinite);
-        btnPuzzle = dialogView.findViewById(R.id.puzzle);
         btnNormal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,12 +97,6 @@ public class CategoryActivity extends AppCompatActivity {
                 dialog1.dismiss();
             }
         });
-        btnPuzzle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
     }
 
     private void showDialogModePickerMusic() {
@@ -119,7 +107,6 @@ public class CategoryActivity extends AppCompatActivity {
         final Dialog dialog1 = dialog.show();
         btnNormal = dialogView.findViewById(R.id.normal);
         btnInfinite = dialogView.findViewById(R.id.infinite);
-        btnPuzzle = dialogView.findViewById(R.id.puzzle);
         btnNormal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,12 +123,7 @@ public class CategoryActivity extends AppCompatActivity {
                 dialog1.dismiss();
             }
         });
-        btnPuzzle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
     }
 
     private void showDialogModePickerGeneral() {
@@ -152,7 +134,6 @@ public class CategoryActivity extends AppCompatActivity {
         final Dialog dialog1 = dialog.show();
         btnNormal = dialogView.findViewById(R.id.normal);
         btnInfinite = dialogView.findViewById(R.id.infinite);
-        btnPuzzle = dialogView.findViewById(R.id.puzzle);
         btnNormal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -169,22 +150,15 @@ public class CategoryActivity extends AppCompatActivity {
                 dialog1.dismiss();
             }
         });
-        btnPuzzle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
     }
 
     private void showDialogModePickerEnglish() {
         final android.app.AlertDialog.Builder dialog = new android.app.AlertDialog.Builder(this);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View dialogView = inflater.inflate(R.layout.dialog_mode_picker, null);
+        View dialogView = inflater.inflate(R.layout.dialog_mode_picker_english, null);
         dialog.setView(dialogView);
         final Dialog dialog1 = dialog.show();
         btnNormal = dialogView.findViewById(R.id.normal);
-        btnInfinite = dialogView.findViewById(R.id.infinite);
         btnPuzzle = dialogView.findViewById(R.id.puzzle);
         btnNormal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -194,18 +168,12 @@ public class CategoryActivity extends AppCompatActivity {
                 dialog1.dismiss();
             }
         });
-        btnInfinite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(CategoryActivity.this, EnglishInfiniteActivity.class);
-                startActivity(intent);
-                dialog1.dismiss();
-            }
-        });
         btnPuzzle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(CategoryActivity.this, EnglishPuzzleActivity.class);
+                startActivity(intent);
+                dialog1.dismiss();
             }
         });
     }
@@ -218,7 +186,6 @@ public class CategoryActivity extends AppCompatActivity {
         final Dialog dialog1 = dialog.show();
         btnNormal = dialogView.findViewById(R.id.normal);
         btnInfinite = dialogView.findViewById(R.id.infinite);
-        btnPuzzle = dialogView.findViewById(R.id.puzzle);
         btnNormal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -235,12 +202,6 @@ public class CategoryActivity extends AppCompatActivity {
                 dialog1.dismiss();
             }
         });
-        btnPuzzle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
     }
 
     private void showDialogModePickerComputer() {
@@ -251,7 +212,6 @@ public class CategoryActivity extends AppCompatActivity {
         final Dialog dialog1 = dialog.show();
         btnNormal = dialogView.findViewById(R.id.normal);
         btnInfinite = dialogView.findViewById(R.id.infinite);
-        btnPuzzle = dialogView.findViewById(R.id.puzzle);
         btnNormal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -266,12 +226,6 @@ public class CategoryActivity extends AppCompatActivity {
                 Intent intent = new Intent(CategoryActivity.this, ComputerInfiniteActivity.class);
                 startActivity(intent);
                 dialog1.dismiss();
-            }
-        });
-        btnPuzzle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
             }
         });
     }

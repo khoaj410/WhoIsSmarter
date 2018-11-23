@@ -49,14 +49,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="30dp"></View>
-    <Button
-        android:id="@+id/puzzle"
-        android:background="@drawable/shape"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:text="Puzzle (Ghép Chữ)"
-        android:layout_height="wrap_content"
-        android:textSize="24dp"/>
+
 
 
     </LinearLayout>

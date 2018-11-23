@@ -86,6 +86,26 @@ public class SportsOpenHepler extends SQLiteOpenHelper {
         sportsQuestions.add(new SportsQuestion("Hoàng Xuân Vinh là vận dộng viên đã dành huy chương vàng trong bộ môn gì?","Bơi lội","Điền Kinh","Bắn súng","Cầu lông","Bắn súng"));
 
         sportsQuestions.add(new SportsQuestion("Tựa Esport nào có tổng giá trị giải thường cao nhất?","League Of Legends","DOTA2","Starcraft","AOE","DOTA2"));
+
+        sportsQuestions.add(new SportsQuestion("Wayne Rooney là cầu thủ của nước nào","Pháp","Anh","Đức","Tây Ban Nha","Anh"));
+
+        sportsQuestions.add(new SportsQuestion("Đội nào vô địch World Cup nhiều nhất?","Brazil","Đức","Pháp","Argentina","Brazil"));
+
+        sportsQuestions.add(new SportsQuestion("Iniesta rời Barcelona để sang chơi cho giải nước nào?","Đức","Ý","Nhật Bản","Hàn Quốc","Nhật Bản"));
+
+        sportsQuestions.add(new SportsQuestion("Federer - vận động viên tennis năm nay bao tuổi?","35","25","30","37","37"));
+
+        sportsQuestions.add(new SportsQuestion("HLV của Manchester City hiện tại là ai?","Jose Mourinho","Pep Guardiola","Zidane","Park-Hang Seo","Pep Guardiola"));
+
+        sportsQuestions.add(new SportsQuestion("Huyền thoại HLV của MU là ai?","Sir Alex Ferguson","Jose Mourinho","David Moyes","Van Gaal","Sir Alex Ferguson"));
+
+        sportsQuestions.add(new SportsQuestion("Lewis Hamilton đã lần thứ mấy vô địch F1","3","4","5","6","5"));
+
+        sportsQuestions.add(new SportsQuestion("Thủ môn huyền thoại của Ý có tên gì?","Gianluigi Buffon","David De Gea","Keylor Navas","Ederson","Gianluigi Buffon"));
+
+        sportsQuestions.add(new SportsQuestion("Đội bóng nào đã 3 lần liên tiếp vô địch C1 (Champions League)","Barcelona","Bayern Munich","Real Madrid","Manchester United","Real Madrid"));
+
+        sportsQuestions.add(new SportsQuestion("Linh vật của SEA Games 2003 là con gì?","Trâu Vàng","Bò Tót","Vẹt","Voi","Trâu Vàng"));
         this.addAllQuestions(sportsQuestions);
     }
     public void addAllQuestions(ArrayList<SportsQuestion> allQuestions) {

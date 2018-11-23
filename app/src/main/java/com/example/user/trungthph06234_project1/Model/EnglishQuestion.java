@@ -19,7 +19,22 @@ public class EnglishQuestion {
             R.drawable.museum,
             R.drawable.police,
             R.drawable.shield,
-            R.drawable.sky
+            R.drawable.sky,
+            R.drawable.wings,
+            R.drawable.assassin,
+            R.drawable.magic,
+            R.drawable.basketball,
+            R.drawable.flags,
+            R.drawable.chair,
+            R.drawable.gate,
+            R.drawable.support,
+            R.drawable.lantern,
+            R.drawable.festival,
+            R.drawable.balloons,
+            R.drawable.monster,
+            R.drawable.darkness
+
+
     };
 
     //array of multiple choices for each question
@@ -40,14 +55,26 @@ public class EnglishQuestion {
             {"Museum","School","Hospital","Art-Gallery"},
             {"Boss","Designer","Engineer","Police"},
             {"Barrier","Gun","Shield","Bow"},
-            {"Cloud","Star","White","Sky"}
-
+            {"Cloud","Star","White","Sky"},
+            {"Wings","Angel","Devil","Light"},
+            {"Lancer","Ninja","Assassin","Rider"},
+            {"Sparkle","Twinkle","Magic","Darkness"},
+            {"Football","Basketball","Volleyball","Badminton"},
+            {"Picture","Flag","Dragon","Image"},
+            {"Table","Bag","Chair","Speaker"},
+            {"Gate","Televison","Bed","Point"},
+            {"Carry","Support","Mid","Top"},
+            {"T-shirt","Lantern","Pillow","Remote"},
+            {"Party","Meeting","Family","Festival"},
+            {"Ball","Rainbow","Ballon","Fly"},
+            {"Dog","Cat","Phoenix","Monster"},
+            {"Light","Miracle","Darkness","Nothing"}
 
     };
 
     // array of correct answers - in the same order as array of questions
     private String MyCorrectAnswers[] = {"Apple", "Bicycle", "Dinosaur", "Elephant", "Lightning", "Fire", "Doctor", "Eclipse", "Hunter", "Knife", "Knight", "Lion", "Moon", "Museum", "Police"
-            , "Shield", "Sky"};
+            , "Shield", "Sky", "Wings", "Assassin", "Magic", "Basketball", "Flag", "Chair", "Gate", "Support", "Lantern", "Festival", "Ballon", "Monster", "Darkness"};
 
     // method returns number of questions
     public int getLength() {
