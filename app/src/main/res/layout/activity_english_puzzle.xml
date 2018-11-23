@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F80000"
+    tools:context=".Activity.EnglishNormalActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#10DE2C"
+        android:minHeight="?actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/coinText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=""
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/coinImage"/>
+
+            <TextView
+                android:id="@+id/triviaQuizText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="English Puzzle"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:layout_toLeftOf="@+id/timeText"
+                android:layout_toRightOf="@+id/coinText" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/triviaQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Đuổi Hình Bắt Chữ"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+        <GridView
+            android:id="@+id/gridViewAnswer"
+            android:layout_margin="20dp"
+            android:padding="4dp"
+            android:horizontalSpacing="4dp"
+            android:verticalSpacing="4dp"
+            android:columnWidth="40dp"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <GridView
+            android:id="@+id/gridViewSuggest"
+            android:layout_margin="20dp"
+            android:padding="4dp"
+            android:horizontalSpacing="4dp"
+            android:verticalSpacing="4dp"
+            android:columnWidth="40dp"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape2"
+        android:layout_margin="10dp"
+        android:onClick="buttonA"
+        android:text="SUBMIT"
+        android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
