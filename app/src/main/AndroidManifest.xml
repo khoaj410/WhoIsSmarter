@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.user.trungthph06234_project1">
+    package="com.example.user.WhoIsSmarter">
 
     <application
         android:allowBackup="true"
@@ -9,28 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.HomeActivity">
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.CategoryActivity" />
-        <activity android:name=".Activity.GameNormalActivity" />
-        <activity android:name=".Activity.GameInfiniteActivity" />
-        <activity android:name=".Activity.MusicNormalActivity" />
-        <activity android:name=".Activity.MusicInfiniteActivity" />
-        <activity android:name=".Activity.GeneralNormalActivity" />
-        <activity android:name=".Activity.GeneralInfiniteActivity" />
-        <activity android:name=".Activity.EnglishNormalActivity" />
-        <activity android:name=".Activity.SportNormalActivity" />
-        <activity android:name=".Activity.SportInfiniteActivity" />
-        <activity android:name=".Activity.ComputerNormalActivity" />
-        <activity android:name=".Activity.ComputerInfiniteActivity" />
-        <activity android:name=".Activity.SettingActivity" />
-        <activity android:name=".Activity.GameWonActivity" />
-        <activity android:name=".Activity.EnglishPuzzleActivity"></activity>
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.CategoryActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.GameNormalActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.GameInfiniteActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.MusicNormalActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.MusicInfiniteActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.GeneralNormalActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.GeneralInfiniteActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.EnglishNormalActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.SportNormalActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.SportInfiniteActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.ComputerNormalActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.ComputerInfiniteActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.AboutMeActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.GameWonActivity" />
+        <activity android:name="com.example.user.WhoIsSmarter.Activity.EnglishPuzzleActivity"></activity>
     </application>
 
 </manifest>

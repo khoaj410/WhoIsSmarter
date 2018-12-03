@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="English Puzzle"
+                android:text="@string/english_puzzle"
                 android:textColor="@android:color/black"
                 android:textSize="25sp"
                 android:layout_toLeftOf="@+id/timeText"
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:gravity="center"
-            android:text="Đuổi Hình Bắt Chữ"
+            android:text="@string/u_i_h_nh_b_t_ch"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
@@ -108,7 +108,7 @@
         android:background="@drawable/shape2"
         android:layout_margin="10dp"
         android:onClick="buttonA"
-        android:text="SUBMIT"
+        android:text="@string/submit"
         android:textColor="@android:color/black"/>
 
     </LinearLayout>

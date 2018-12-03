@@ -10,8 +10,7 @@
         android:id="@+id/tQ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wrong
-Game Over"
+        android:text="@string/wrong_game_over"
         android:gravity="center"
         android:fontFamily="monospace"
         android:textSize="50sp"/>

@@ -32,7 +32,7 @@
                 android:text=""
                 android:paddingRight="5dp"
                 android:paddingLeft="5dp"
-                android:gravity="left"
+                android:gravity="center"
                 android:textSize="20sp"
                 android:layout_toRightOf="@id/coinImage"/>
 
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Music Quiz"
+                android:text="@string/music_quiz"
                 android:textColor="@android:color/black"
                 android:textSize="25sp"
                 android:layout_toLeftOf="@+id/timeText"
@@ -80,17 +80,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:gravity="center"
-            android:text="Nghe Nhạc Đoán Tên Bài Hát"
+            android:text="@string/nghe_nh_c_o_n_t_n_b_i_h_t"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/playBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@android:drawable/ic_media_play"
-            android:layout_marginBottom="40dp"/>
 
         <TextView
             android:id="@+id/resultText"

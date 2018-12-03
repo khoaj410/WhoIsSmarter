@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/fbutton_color_clouds"
+    tools:context=".Activity.HomeActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo1"/>
+    <TextView
+        android:id="@+id/tQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_me"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:textSize="50sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Quiz Game - Who's Smarter Đc Trần Hoàng Trung
+Tạo Ra Với Mục Đích Là Giải Trí Và Học Tập - Dùng Đc
+Cho Mọi Đối tượng"
+        android:gravity="left"
+        android:textSize="14sp"/>
+
+
+
+
+</LinearLayout>

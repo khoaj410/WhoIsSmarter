@@ -10,7 +10,7 @@
         android:id="@+id/tQ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pick Mode"
+        android:text="@string/pick_mode"
         android:gravity="center"
         android:fontFamily="monospace"
         android:textSize="50sp"/>
@@ -27,7 +27,7 @@
         android:id="@+id/normal"
         android:background="@drawable/shape"
         android:layout_width="300dp"
-        android:text="Normal (Cơ Bản)"
+        android:text="@string/normal_c_b_n"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:textSize="24dp"/>
@@ -41,7 +41,7 @@
         android:id="@+id/infinite"
         android:background="@drawable/shape"
         android:layout_width="300dp"
-        android:text="Infinite (Vô Tận)"
+        android:text="@string/infinite_v_t_n"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:textSize="24dp"/>

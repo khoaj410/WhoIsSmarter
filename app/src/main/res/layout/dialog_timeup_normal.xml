@@ -10,8 +10,7 @@
         android:id="@+id/tQ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Time Up
-Game Over"
+        android:text="@string/time_up_game_over"
         android:gravity="center"
         android:fontFamily="monospace"
         android:textSize="50sp"/>

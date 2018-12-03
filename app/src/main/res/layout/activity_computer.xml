@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Computer Quiz"
+                android:text="@string/computer_quiz"
                 android:textColor="@android:color/black"
                 android:textSize="25sp"
                 android:layout_toLeftOf="@+id/timeText"

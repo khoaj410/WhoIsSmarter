@@ -10,7 +10,7 @@
         android:id="@+id/tQ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pick Mode"
+        android:text="@string/pick_mode"
         android:gravity="center"
         android:fontFamily="monospace"
         android:textSize="50sp"/>
@@ -27,7 +27,7 @@
         android:id="@+id/normal"
         android:background="@drawable/shape"
         android:layout_width="300dp"
-        android:text="Đuổi Hình Bắt Chữ"
+        android:text="@string/u_i_h_nh_b_t_ch"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:textSize="24dp"/>
@@ -42,7 +42,7 @@
         android:background="@drawable/shape"
         android:layout_gravity="center"
         android:layout_width="300dp"
-        android:text="Puzzle (Ghép Chữ)"
+        android:text="@string/puzzle_gh_p_ch"
         android:layout_height="wrap_content"
         android:textSize="24dp"/>
 

@@ -67,27 +67,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <ImageView
-        android:id="@+id/sound"
-        android:background="@drawable/shape"
-        android:layout_width="50dp"
-        android:layout_gravity="left"
-        android:src="@drawable/soundoon"
-        android:layout_marginLeft="40dp"
-        android:layout_height="50dp"
-        android:textColor="#297123"
-        android:textSize="24dp"/>
-    />
 
-    <ImageView
-        android:id="@+id/soundoff"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="right"
-        android:background="@drawable/shape"
-        android:layout_marginLeft="200dp"
-        android:src="@drawable/soundoff"
-        android:textColor="#297123" />
-    />
+        <ToggleButton
+            android:id="@+id/tgbSound"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/tgb_sound"
+            android:minWidth="48dp"
+            android:textOff=""
+            android:textOn="" />
+
     </LinearLayout>
 </LinearLayout>

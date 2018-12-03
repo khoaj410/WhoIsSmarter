@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fbutton_color_clouds"
@@ -10,7 +11,7 @@
         android:id="@+id/tQ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Time Up"
+        android:text="@string/time_up"
         android:gravity="center"
         android:fontFamily="monospace"
         android:textSize="50sp"/>
@@ -28,10 +29,11 @@
         android:id="@+id/NextInff"
         android:background="@drawable/shape"
         android:layout_width="300dp"
-        android:text="NEXT"
+        android:text="Next"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:textSize="24dp"/>
+        android:textSize="24dp"
+        tools:ignore="HardcodedText" />
 
 
 

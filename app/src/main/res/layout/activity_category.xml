@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.trungthph06234_project1.Activity.CategoryActivity">
+    tools:context="com.example.user.WhoIsSmarter.Activity.CategoryActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:foreground="?attr/selectableItemBackground"
                 android:drawableTop="@drawable/gameeee"
                 android:paddingTop="25dp"
-                android:text="Game"
+                android:text="@string/game"
                 android:textAllCaps="false"
                 android:textColor="#2f2e2e"
                 android:textSize="18sp" />
@@ -42,7 +42,7 @@
                 android:foreground="?attr/selectableItemBackground"
                 android:drawableTop="@drawable/musiccc"
                 android:paddingTop="45dp"
-                android:text="Music, Showbiz, Movies"
+                android:text="@string/music_showbiz_movies"
                 android:textAllCaps="false"
                 android:textColor="#2f2e2e"
                 android:textSize="18sp" />
@@ -63,7 +63,7 @@
                 android:background="#e7595d"
                 android:drawableLeft="@drawable/boookkk"
                 android:paddingLeft="45dp"
-                android:text="General Knowledge"
+                android:text="@string/general_knowledge"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="24sp" />
@@ -85,7 +85,7 @@
                 android:drawableTop="@drawable/englishh"
                 android:paddingTop="25dp"
                 android:foreground="?attr/selectableItemBackground"
-                android:text="English"
+                android:text="@string/english"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="18sp" />
@@ -99,7 +99,7 @@
                 android:background="#9F4141"
                 android:drawableTop="@drawable/soccerr"
                 android:paddingTop="25dp"
-                android:text="Sports"
+                android:text="@string/sports"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="18sp" />
@@ -122,7 +122,7 @@
                 android:drawableLeft="@drawable/computer"
                 android:paddingLeft="35dp"
                 android:foreground="?attr/selectableItemBackground"
-                android:text="Computer"
+                android:text="@string/computer"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="24sp" />

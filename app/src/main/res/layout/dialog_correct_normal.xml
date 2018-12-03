@@ -10,7 +10,7 @@
         android:id="@+id/tQ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Correct"
+        android:text="@string/correct"
         android:gravity="center"
         android:fontFamily="monospace"
         android:textSize="50sp"/>
