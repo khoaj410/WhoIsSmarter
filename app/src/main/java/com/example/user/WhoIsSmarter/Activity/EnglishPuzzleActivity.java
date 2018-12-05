@@ -190,8 +190,6 @@ public class EnglishPuzzleActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, CategoryActivity.class);
-        startActivity(intent);
         finish();
     }
 }

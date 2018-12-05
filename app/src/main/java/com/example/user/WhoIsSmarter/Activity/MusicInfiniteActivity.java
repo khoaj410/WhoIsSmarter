@@ -241,6 +241,7 @@ public class MusicInfiniteActivity extends AppCompatActivity {
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         @SuppressLint("InflateParams") View dialogView = inflater.inflate(R.layout.dialog_wrong_infinite, null);
         dialog.setView(dialogView);
+        dialog.setCancelable(false);
         final Dialog dialog1 = dialog.show();
         btnNextInf = dialogView.findViewById(R.id.NextInf);
         btnNextInf.setOnClickListener(new View.OnClickListener() {
@@ -265,6 +266,7 @@ public class MusicInfiniteActivity extends AppCompatActivity {
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         @SuppressLint("InflateParams") View dialogView = inflater.inflate(R.layout.dialog_timeup_infinite, null);
         dialog.setView(dialogView);
+        dialog.setCancelable(false);
         final Dialog dialog1 = dialog.show();
         btnNextInff = dialogView.findViewById(R.id.NextInff);
         btnNextInff.setOnClickListener(new View.OnClickListener() {
@@ -289,6 +291,7 @@ public class MusicInfiniteActivity extends AppCompatActivity {
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         @SuppressLint("InflateParams") View dialogView = inflater.inflate(R.layout.dialog_correct_normal, null);
         dialog.setView(dialogView);
+        dialog.setCancelable(false);
         final Dialog dialog1 = dialog.show();
         btnNext = dialogView.findViewById(R.id.Next);
         btnNext.setOnClickListener(new View.OnClickListener() {
@@ -339,8 +342,6 @@ public class MusicInfiniteActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, CategoryActivity.class);
-        startActivity(intent);
         finish();
         mediaPlayer1.stop();
     }

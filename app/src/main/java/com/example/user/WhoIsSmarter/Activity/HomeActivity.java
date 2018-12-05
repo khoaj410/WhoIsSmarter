@@ -13,6 +13,7 @@ import android.widget.ToggleButton;
 
 import com.example.user.WhoIsSmarter.Constant;
 import com.example.user.WhoIsSmarter.R;
+import com.example.user.WhoIsSmarter.ThemeSongService;
 
 public class HomeActivity extends AppCompatActivity implements Constant {
     private Button btnPlay;
@@ -51,11 +52,14 @@ public class HomeActivity extends AppCompatActivity implements Constant {
             }
         });
         btnQuit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+                                       @Override
+                                       public void onClick(View v) {
+                                           Intent a = new Intent(Intent.ACTION_MAIN);
+                                           a.addCategory(Intent.CATEGORY_HOME);
+                                           a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                           startActivity(a);
+                                       }
+                                   });
 
         tgbSound.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -63,12 +67,10 @@ public class HomeActivity extends AppCompatActivity implements Constant {
                 SharedPreferences pref = getSharedPreferences(PREF_SOUND, MODE_PRIVATE);
                 SharedPreferences.Editor editor = pref.edit();
                 if (!isChecked) {
-                    mediaPlayer = MediaPlayer.create(HomeActivity.this, R.raw.tuturu);
-                    mediaPlayer.start();
-                    mediaPlayer.setLooping(true);
+                    startService(new Intent(HomeActivity.this, ThemeSongService.class));
                     editor.putBoolean(IS_SOUND, true);
                 } else {
-                    mediaPlayer.stop();
+                    stopService(new Intent(HomeActivity.this, ThemeSongService.class));
                     editor.putBoolean(IS_SOUND, false);
                 }
                 editor.apply();
@@ -80,9 +82,7 @@ public class HomeActivity extends AppCompatActivity implements Constant {
         SharedPreferences pref = getSharedPreferences(PREF_SOUND, MODE_PRIVATE);
         boolean sound = pref.getBoolean(IS_SOUND, true);
         if (sound) {
-                mediaPlayer = MediaPlayer.create(this, R.raw.tuturu);
-                mediaPlayer.start();
-                mediaPlayer.setLooping(true);
+            startService(new Intent(HomeActivity.this, ThemeSongService.class));
         } else {
             tgbSound.setChecked(true);
         }
@@ -97,6 +97,9 @@ public class HomeActivity extends AppCompatActivity implements Constant {
     @Override
     protected void onStop() {
         super.onStop();
-        mediaPlayer.stop();
+        stopService(new Intent(HomeActivity.this, ThemeSongService.class));
+    }
+    public void onBackPressed() {
+
     }
 }

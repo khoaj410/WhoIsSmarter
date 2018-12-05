@@ -27,4 +27,6 @@ public class GameWonActivity extends AppCompatActivity {
             }
         },4000);
     }
+    @Override
+    public void onBackPressed() { }
 }

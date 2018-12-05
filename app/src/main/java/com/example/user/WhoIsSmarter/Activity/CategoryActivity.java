@@ -231,7 +231,7 @@ public class CategoryActivity extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(CategoryActivity.this,HomeActivity.class);
         startActivity(intent);
         finish();
     }

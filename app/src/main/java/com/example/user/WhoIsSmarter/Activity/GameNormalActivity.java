@@ -231,6 +231,7 @@ public class GameNormalActivity extends AppCompatActivity {
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         @SuppressLint("InflateParams") View dialogView = inflater.inflate(R.layout.dialog_wrong_normal, null);
         dialog.setView(dialogView);
+        dialog.setCancelable(false);
         final Dialog dialog1 = dialog.show();
             }
 
@@ -239,6 +240,7 @@ public class GameNormalActivity extends AppCompatActivity {
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         @SuppressLint("InflateParams") View dialogView = inflater.inflate(R.layout.dialog_timeup_normal, null);
         dialog.setView(dialogView);
+        dialog.setCancelable(false);
         final Dialog dialog1 = dialog.show();
     }
 
@@ -247,6 +249,7 @@ public class GameNormalActivity extends AppCompatActivity {
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         @SuppressLint("InflateParams") View dialogView = inflater.inflate(R.layout.dialog_correct_normal, null);
         dialog.setView(dialogView);
+        dialog.setCancelable(false);
         final Dialog dialog1 = dialog.show();
         btnNext = dialogView.findViewById(R.id.Next);
         btnNext.setOnClickListener(new View.OnClickListener() {
@@ -295,8 +298,6 @@ public class GameNormalActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, CategoryActivity.class);
-        startActivity(intent);
         finish();
     }
 
